@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style> 
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+
+
+        .container{
+            width: 100vw;
+            height: 100vh;
+            background-color: aqua;
+            border: 4px solid black;
+            display: flex;
+        }
+
+        .box{
+            width: 350px;
+            height: 50px;
+            background-color: bisque;
+            border: 3px solid red;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: why;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            animation-timing-function:linear;
+            /* animation-direction: alternate; */
+            animation-fill-mode: both;
+
+        }
+
+        @keyframes why{
+
+            from   {
+
+                top:0px;
+                left:0px
+
+            }
+            to     {
+
+                top:0px;
+                left:1100px;
+
+            }
+
+        }
+
+        #box2{
+            width: 350px;
+            height: 50px;
+            background-color: bisque;
+            border: 3px solid red;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: why2;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            /* animation-delay: 2s; */
+            animation-timing-function:linear;
+            animation-direction: alternate-reverse;
+            /* animation-fill-mode: both; */
+        }
+        @keyframes why2{
+
+            from   {
+
+                top:500px;
+                left:0px
+
+            }
+            to     {
+
+                top:500px;
+                left:1100px;
+
+            }
+
+        }
+
+        #circle{
+            width: 50px;
+            height: 50px;
+            background-color: bisque;
+            border: 3px solid red;
+            border-radius: 100px;
+            margin: 10px;
+            position: relative;
+            justify-self: center;
+            align-self: center;
+            animation: 10s ease-in-out infinite  alternate-reverse none running circlean;
+        }
+
+         @keyframes circlean{
+
+           0%{
+
+            top:2% ;
+            left:5% ;
+
+           }
+            30%{
+
+                top:5% ;
+                left:40% ;
+            
+           }
+
+            60%{
+
+                top:50% ;
+                left:10% ;
+            
+           }
+            100%{
+
+                top:60% ;
+                left:70% ;
+            
+           }
+
+        }
+
+    </style>
+</head>
+<body>
+    
+    <div   class="container">
+
+        <div class="box">
+
+
+        </div>
+
+        <div id="box2">
+
+        </div>
+
+        <div id="circle">
+
+        </div>
+    </div>
+
+
+</body>
+</html>

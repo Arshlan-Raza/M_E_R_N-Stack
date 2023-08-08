@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition</title>
+    <style>
+        .box{
+            height: 300px;
+            width: 300px;
+            background-color: red;
+            transition-property: all;
+            transition-duration: 3s;
+            transition-delay: 1s;
+            transition-timing-function: liner;
+            display: flex;
+
+        }
+
+        button{
+            justify-content: center;
+            align-self: center;
+        }
+
+        button:hover{
+            background-color: rgb(12, 237, 222);
+        }
+
+        .box:hover{
+            width: 500px;
+            background-color: green;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="box">
+
+        <button>click me</button>
+
+    </div>
+</body>
+</html>

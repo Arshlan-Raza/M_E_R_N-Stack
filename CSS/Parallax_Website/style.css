@@ -1,0 +1,114 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+
+#wrapper   {
+    height: 100vh;
+    overflow-x: hidden;
+    overflow-y: auto;
+    perspective: 10px;
+    
+}
+
+.container{
+
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    transform-style: preserve-3d;
+    z-index: -1 ;
+
+}
+
+.background{
+    height: 80%;
+    transform: translateZ(-60px) scale(9);
+}
+
+.foreground{
+
+    height: 150%;
+    transform: translateZ(-20px) scale(2);
+}
+
+.background,.foreground{
+
+    position: absolute;
+    /* height: 100%; */
+    width: 100%;
+    z-index: -1;
+    object-fit: cover;
+}
+
+
+h1{
+    position: absolute;
+    font-size: 8rem;
+    color: white;
+    text-shadow: 0 0 10px rgba(0 ,0 , 0, 0.3);
+    top: 6rem;
+
+}
+
+section{
+   
+    background-color: rgb(45, 45, 45);
+    color: white ;
+    padding: 5rem 0;
+    overflow-wrap: break-word;
+
+}
+
+.sechead{
+
+    font-size: 5rem;
+    padding: 0 10rem;
+}
+
+.text{
+    font-size: 1.5rem;
+    padding: 0 10rem;
+    margin: 5rem 0;
+}
+
+.bg{
+    position: relative;
+    width: 100%;
+    /* this is to fix the attached image  */
+    background-attachment: fixed; 
+    background-size: cover;
+    background-position: center; 
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.bg1{
+    background-image: url(Biking.jpg);
+    
+}
+
+.bg2{
+    background-image: url(para_gliding.jpg);
+}
+
+.bg3{
+    background-image: url(surfing.jpg);
+}
+
+.desc{
+    position: absolute;
+    background-color: white;
+    color: black;
+    padding: 0.5rem 2.5rem;
+    margin: 14rem 0;
+    font-size: 3.5rem;
+    font-weight: 600;
+}

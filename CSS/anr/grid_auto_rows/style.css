@@ -1,0 +1,23 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+.container{
+
+    height: 700px;
+    border: 1px solid black;
+    background-color: yellow;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px auto);
+
+}
+
+.box{
+
+    border: 1px solid red;
+    background-color: aqua;
+   
+} 

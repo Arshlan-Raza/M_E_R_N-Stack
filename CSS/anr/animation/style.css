@@ -1,0 +1,21 @@
+
+*{
+
+    --dark-blue:#0000ff
+
+}
+
+.container{
+
+    height: 200px;
+    width: 200px;
+    background-color:var(--dark-blue);
+    border: 1px solid red ;
+
+}
+
+.box{
+    background-color: white;
+    color: black;
+    border: 1px solid black;
+}
